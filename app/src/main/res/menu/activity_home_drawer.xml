@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recent_places"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/recent_places"
+            />
+        <item
+
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/alarms" >
+        <menu>
+            <item
+                android:id="@+id/add_alram"
+
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Alarm"
+                />
+            <item
+                android:id="@+id/existing_alarm"
+
+                android:icon="@drawable/ic_menu_send"
+                android:title="Existing Alarm"
+                />
+        </menu>
+       </item>
+        <item android:title="Settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/settings"
+            />
+
+
+        <item
+            android:id="@+id/user_guide"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="UserGuide" />
+        <!--<item
+            android:id="@+id/tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+-->
+    </group>
+
+
+
+</menu>

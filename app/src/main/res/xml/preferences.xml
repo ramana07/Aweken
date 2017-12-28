@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Alarm Settings">
+
+        <!-- <CheckBoxPreference
+             android:key="checkbox_preference"
+             android:title="cc"
+             android:summary="bb" />-->
+        <RingtonePreference
+            android:defaultValue="1"
+
+            android:key="notifications_new_message_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/pref_title_ringtone" />
+
+        <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notifications_new_message_vibrate"
+            android:title="@string/pref_title_vibrate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Circle Radius">
+
+        <!--<EditTextPreference
+            android:key="edittext_preference"
+            android:title="2000 meters"
+
+            android:dialogTitle="Enter" />-->
+
+        <ListPreference
+            android:defaultValue="2000"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="circle_range"
+
+            android:negativeButtonText="@null"
+            android:positiveButtonText="ok"
+            android:title="range" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="MapType">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="map_type"
+            android:title="Satellite"
+            />
+
+        <!-- This PreferenceScreen tag serves as a screen break (similar to page break
+             in word processing). Like for other preference types, we assign a key
+             here so it is able to save and restore its instance state. -->
+        <!--<PreferenceScreen
+            android:key="screen_preference"
+            android:title="screen_preference"
+            android:summary="summary_screen_preference">
+
+            &lt;!&ndash; You can place more preferences here that will be shown on the next screen. &ndash;&gt;
+
+            <CheckBoxPreference
+                android:key="next_screen_checkbox_preference"
+                android:title="title_next_screen_toggle_preference"
+                android:summary="summary_next_screen_toggle_preference" />
+
+        </PreferenceScreen>-->
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

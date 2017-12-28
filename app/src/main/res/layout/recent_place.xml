@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tallrocket.aweken.RecentPlaces">
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightBlue"
+        android:text="Recent Places"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="532dp" />
+</LinearLayout>
